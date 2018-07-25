@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>In-two-lines</title>
+    <!--<link href="https://fonts.googleapis.com/css?family=Kirang+Haerang" rel="stylesheet">-->
+    <!--<link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">-->
+    <!--<link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">-->
+    <!--<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<style>
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        height: 100%;
+        margin: 0;
+    }
+
+    .logo {
+        margin: 0;
+        text-indent: -100000px;
+        height: 175px;
+        /*border: 3px solid #417C2A;*/
+        /*background: darkolivegreen;*/
+        background-image: url("img/logo.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        border-bottom: 2px solid burlywood;;
+    }
+
+    .main-banner {
+        height: 800px ;
+        /*border: 3px solid rgb(113,20,90);*/
+        /*background: darkviolet;*/
+        background: url("img/main-banner2.jpg")no-repeat center center;
+        background-size: 100% 130%;
+        background-attachment: fixed;
+        border-bottom: 2px solid burlywood;
+    }
+
+    nav {
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav li {
+        list-style-type: none;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 10px 10px;
+        border: 2px solid white;
+        border-radius: 20px;
+        /*background: rgba(250, 235, 215, 0.4);*/
+        background: rgba(255, 140, 0, 0.4);
+        /*font-family: 'Kirang Haerang', cursive;*/
+        /*font-family: 'Merienda', cursive;*/
+        /*font-family: 'Do Hyeon', sans-serif;*/
+        /*font-family: 'Oswald', sans-serif;*/
+        font-family: 'Amatic SC', cursive;
+        font-size: 28px;
+        text-shadow: 0 0 4px black;
+
+    }
+
+    .container {
+        height: 750px;
+    }
+
+
+    .burger-list {
+        display: none;
+    }
+
+    @media screen and (max-width: 1300px) {
+        .main-banner {
+            height: 500px;
+            background-size: 100% 100%;
+        }
+
+        nav li {
+            font-size: 22px;
+        }
+
+    }
+
+    @media screen and (max-width: 900px) {
+
+        .main-banner {
+            height: 500px;
+            background-size: 100% 100%;
+        }
+
+        nav li {
+            font-size: 20px;
+            padding: 5px 10px;
+        }
+
+    }
+
+
+    @media screen and (max-width: 800px) {
+
+        .main-banner {
+            height: 400px;
+            background-size: 100% 125%;
+            background-attachment: unset;
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+
+        .main-banner {
+            height: 300px;
+        }
+
+        nav {
+            padding: 35px;
+        }
+
+        nav li {
+            font-size: 16px;
+        }
+    }
+    
+    @media screen and (max-width: 450px) {
+        .burger-nav {
+            height: 40px;
+            background: rgb(255, 145, 0);
+            background-image: url("img/burger.png");
+            background-repeat: no-repeat;
+            background-position: 98% center;
+            cursor: pointer;
+        }
+
+        nav {
+            display: none;
+        }
+
+        .burger-list {
+            display: none;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            font-family: 'Amatic SC', cursive;
+            font-size: 28px;
+            text-align: center;
+            font-weight: unset;
+        }
+
+        .main-banner {
+            opacity: 1;
+        }
+
+        .burger-list li{
+            height: 40px;
+            background: rgb(255, 160, 0);
+            border-bottom: 1px solid rgb(255, 100, 0);
+        }
+
+
+        ul.open {
+            display: block;
+        }
+
+        div.open {
+            opacity: 0.5;
+        }
+
+    }
+
+
+
+</style>
+
+<body>
+    <header>
+        <h1 class="logo">In-two-lines</h1>
+
+        <div class="burger-nav"></div>
+
+        <ul class="burger-list"></ul>
+
+        <div class="main-banner">
+            <nav>
+                <li>About us</li>
+                <li>Previous works</li>
+                <li>How do we work</li>
+                <li>Contacts</li>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container"></div>
+</body>
+</html>
