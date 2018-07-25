@@ -1,0 +1,21 @@
+{
+  "name": "foryurij_header_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TantsurNetwork/foryurij_header_test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TantsurNetwork/foryurij_header_test/issues"
+  },
+  "homepage": "https://github.com/TantsurNetwork/foryurij_header_test#readme"
+}
